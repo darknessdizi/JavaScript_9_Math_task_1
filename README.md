@@ -1,5 +1,7 @@
 # Домашнее задание к лекции «`ArrayBuffer`»
 
+[![Build status](https://ci.appveyor.com/api/projects/status/mkefgum2mbey22jb?svg=true)](https://ci.appveyor.com/project/darknessdizi/javascript-9-math-task-1)
+
 ## `Math (log/trig)`
 
 ### Легенда
