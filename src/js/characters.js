@@ -12,9 +12,9 @@ const power = {
 };
 
 export default class Characters {
-  constructor(name) {
+  constructor(name, attack) {
     this.name = name;
-    this.attack = undefined;
+    this.attack = attack;
     this.debaff = false;
   }
 
@@ -35,9 +35,9 @@ export default class Characters {
     if (value > 10) {
       result = 0;
     } else if (!this.stoned) {
-      result = (power[value] * this.attack) / 100;
+      result = (power[value] * this.maxAttack) / 100;
     } else {
-      result = (power[value] * this.attack) / 100 - (Math.log2(value) * 5);
+      result = (power[value] * this.maxAttack) / 100 - (Math.log2(value) * 5);
     }
     this.attack = Math.floor(result);
   }
